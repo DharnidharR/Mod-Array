@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<math.h>
+int main() 
+{
+    int i,n,j,b,value;
+    printf("Array Size : ");
+    scanf("%d",&n);\
+    printf("Enter %d array Elements : ",n);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    j=n;
+    for(i=0;i<n;i++)
+    {
+        value+=a[i]*pow(10,j-1);
+        j--;
+    }
+    printf("Enter Modulus number : ");
+    scanf("%d",&b);
+    printf("%d",value%b);
+}
